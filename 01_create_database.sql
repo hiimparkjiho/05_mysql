@@ -1,0 +1,21 @@
+SHOW DATABASES;
+
+CREATE USER 'menu'@'%' IDENTIFIED BY 'menu';
+
+SHOW DATABASES;
+
+USE mysql;
+
+SHOW TABLES;
+
+SELECT * FROM USER;
+
+CREATE DATABASE menudb;
+
+GRANT ALL PRIVILEGES ON menudb.* TO 'menu'@'%';
+
+SHOW GRANTS FOR 'menu'@'%';
+
+USE menudb;
+
+SHOW TABLES;
